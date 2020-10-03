@@ -1,0 +1,30 @@
+.content {
+    padding: 2%;
+}
+
+.dialogs .dialogsItems {
+    border: 2px dashed #000;
+    background: linear-gradient(35deg, darkgray,darkgray,darkgray);
+    box-shadow: 6px 5px 15px rgb(0, 0, 0.1);
+    padding: 10px;
+    margin: 30px;
+    color: black;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 10);
+}
+
+.dialogs .messages {
+    margin: 30px;
+    color: black;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 10);
+    border: 2px dashed #000;
+    background: linear-gradient(45deg, darkgray, darkgray, darkgray);
+    box-shadow: 6px 5px 15px rgb(0, 0, 0.1);
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.dialogs .messages:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}

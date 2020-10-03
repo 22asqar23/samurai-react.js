@@ -1,0 +1,11 @@
+.images img {
+    width: 100%;
+    height: auto;
+}
+.item{
+    color: greenyellow;
+}
+
+.descriptionNBlock{
+    padding: 10px;
+}
