@@ -9,3 +9,6 @@
 .descriptionNBlock{
     padding: 10px;
 }
+.descriptionNBlock .mainPhoto{
+    width: 200px;
+}
