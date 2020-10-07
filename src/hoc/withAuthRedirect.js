@@ -1,5 +1,4 @@
-import React from "react";
-import {Component} from "react";
+import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
 import {connect} from "react-redux";
 
@@ -15,8 +14,5 @@ export const withAuthRedirect = (Component) => {
             return <Component {...this.props}/>
         }
     }
-
-    let ConnectedAuthRedirectComponent = connect(mapStateToPropsForRedirect)(RedirectComponent);
-
-    return ConnectedAuthRedirectComponent;
+    return connect(mapStateToPropsForRedirect)(RedirectComponent);
 }

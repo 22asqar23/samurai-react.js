@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import {HashRouter, Route, withRouter} from "react-router-dom";
-import UsersContainer from "./components/users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/login/Login";
 import {connect, Provider} from "react-redux";
@@ -11,8 +10,8 @@ import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
 import {withSuspense} from "./hoc/withSuspense";
-
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
+const UsersContainer = React.lazy(() => import('./components/users/UsersContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 
